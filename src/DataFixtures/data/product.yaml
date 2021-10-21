@@ -1,0 +1,37 @@
+products:
+  -
+    type: pizza
+    name: Super supreme
+    slug: super-supreme
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+    price: 75.00
+  -
+    type: pizza
+    name: Triple crown
+    slug: tripe-crown
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+    price: 109.00
+  -
+    type: pizza
+    name: Greek pizza
+    slug: greek-pizza
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+    price: 86.00
+  -
+    type: burger
+    name: Double cheese burger
+    slug: double-cheese-burger
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+    price: 65.00
+  -
+    type: burger
+    name: Bacon double XL burger
+    slug: bacon-double-xl-burger
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+    price: 109.00
+  -
+    type: burger
+    name: Vegan burger
+    slug: vegan-burger
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vitae, placeat mollitia ipsa omnis, facilis aliquid cumque sapiente veniam earum recusandae saepe!
+    price: 86.00

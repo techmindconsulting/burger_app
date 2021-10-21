@@ -31,6 +31,11 @@ class Product
     /**
      * @ORM\Column(type="string", length=255)
      */
+    private $slug;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
     private $description;
 
     /**
@@ -42,8 +47,6 @@ class Product
      * @ORM\Column(type="string", length=255)
      */
     private $imageUrl;
-
-
 
     public function getId(): ?int
     {
@@ -103,10 +106,21 @@ class Product
         return $this->productType;
     }
 
-    public function setProductType(int $productType): self
+    public function setProductType(ProductType $productType): self
     {
         $this->productType = $productType;
 
+        return $this;
+    }
+
+    public function getSlug(): string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug($slug): self
+    {
+        $this->slug = $slug;
         return $this;
     }
 }

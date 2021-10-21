@@ -1,19 +1,82 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
-        {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
-        {% endblock %}
+{#<html>#}
+{#    <head>#}
+{#        <meta charset="UTF-8">#}
+{#        <title>{% block title %}Welcome!{% endblock %}</title>#}
+{#        #}{# Run `composer require symfony/webpack-encore-bundle`#}
+{#           and uncomment the following Encore helpers to start using Symfony UX #}
+{#        {% block stylesheets %}#}
+{#            #}{#{{ encore_entry_link_tags('app') }}#}
+{#        {% endblock %}#}
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+{#        {% block javascripts %}#}
+{#            #}{#{{ encore_entry_script_tags('app') }}#}
+{#        {% endblock %}#}
+{#    </head>#}
+{#    <body>#}
+{#        {% block body %}{% endblock %}#}
+{#    </body>#}
+{#</html>#}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Fresh Tasty Burger!{% endblock %}</title>
+    <link rel="icon" type="image/png" href="assets/images/cheese-burger.png" />
+
+            {% block stylesheets %}
+                {{ encore_entry_link_tags('app') }}
+            {% endblock %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;900&family=Raleway:wght@900&display=swap"
+    />
+</head>
+<body>
+<header id="header">
+    <div class="header-topbar">
+        <h1>
+            <a href="#"> F<span>oodo</span><img src="assets/images/cheese-burger.png" alt="icon burger" /></a>
+        </h1>
+        <nav class="header-topbar-menu">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+                <li><a href="#get-food" class="red-button">Get Foodo</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-banner">
+        <h2>Fresh tasty <br />burger</h2>
+        <p class="header-banner-price">$189.00</p>
+        <p class="header-banner-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolores ipsam corrupti sunt temporibus
+            animi quam aperiam expedita libero perspiciatis, dolore, nesciunt quaerat voluptate magnam iusto
+            placeat eveniet ipsum!
+        </p>
+        <a href="#products" class="red-button">Order Now</a>
+    </div>
+</header>
+
+{% block body %}
+
+{% endblock %}
+
+<footer>
+    <h1>
+        <a href="#"> F<span>oodo</span><img src="assets/images/cheese-burger.png" alt="icon burger" /></a>
+    </h1>
+    <p>@ Foodo 2020-2021</p>
+    <p>All rights reserved</p>
+</footer>
+</body>
 </html>
