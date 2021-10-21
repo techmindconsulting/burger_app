@@ -1,0 +1,333 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: rgba(18, 18, 18, 0.9);
+    --red: #ee022b;
+    --lightred: rgba(255, 0, 0, 0.7);
+    --white: #ffffff;
+    --grey: #727273;
+    --lightgrey: #f1f1f1;
+    --margin-side: 160px;
+    --transition-duration: 0.5s;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-family: "Maven Pro", "sans-serif";
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    text-align: center;
+}
+
+/* ---------- Buttons ---------  */
+.red-button {
+    display: inline-block;
+    width: 10rem;
+    height: 2.8rem;
+    border-radius: 18px;
+    background-color: var(--red);
+    color: var(--white);
+    text-align: center;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.white-button {
+    display: inline-block;
+    width: 10rem;
+    height: 2.8rem;
+    border-radius: 18px;
+    background-color: var(--white);
+    color: var(--red);
+    text-align: center;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid var(--red);
+}
+
+.white-button:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+
+/*--------------------------------------------------
+		Header Topbar
+--------------------------------------------------- */
+
+.header-topbar {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--margin-side);
+    width: 100%;
+}
+
+.header-topbar h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    flex: 1 0 auto;
+}
+
+.header-topbar h1::first-letter {
+    font-size: 3rem;
+    color: var(--red);
+}
+
+.header-topbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.header-topbar-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-topbar-menu li {
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.header-topbar-menu a {
+    display: inline-block;
+    color: var(--white);
+    text-align: center;
+    border-radius: 18px;
+    width: 125px;
+    height: 40px;
+    line-height: 2.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.header-topbar-menu a:hover {
+    background-color: var(--lightred);
+}
+
+/*--------------------------------------------------
+		Header Banner
+--------------------------------------------------- */
+.header-banner {
+    background: url("../images/burger-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10vh var(--margin-side);
+}
+
+.header-banner h2::before {
+    content: "The one and only\A";
+    white-space: pre;
+    color: var(--white);
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.header-banner h2 {
+    font-family: "Raleway", "Montserrat", sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5.6rem;
+    margin-top: 15px;
+}
+
+.header-banner-price {
+    font-family: "Maven Pro", sans-serif;
+    color: var(--grey);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 15px;
+}
+
+.header-banner-description {
+    color: var(--white);
+    font-size: 1rem;
+    margin: 15px 0 30px 0;
+    width: 50%;
+}
+
+/* About us */
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.about-us {
+    justify-content: space-evenly;
+}
+
+.about-us-item {
+    flex-basis: 35%;
+}
+
+.about-us-item h3 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.about-us-item p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.about-us-item img {
+    height: 500px;
+}
+
+/** Recommanded Today **/
+#products {
+    text-align: center;
+}
+
+.product {
+    flex: 1 0 30%;
+}
+
+.product p {
+    margin: 1.5rem 6rem;
+}
+
+.product-price {
+    font-weight: bold;
+    color: var(--red);
+    font-size: 1.8rem;
+}
+
+
+/* Contact us */
+
+.contact-us {
+    padding-top: 2rem;
+}
+
+.contact {
+    flex-basis: 50%;
+}
+
+.contact h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.form-contact {
+    font-family: "Maven Pro", "sans-serif";
+    font-size: 1rem;
+    padding: 2.5rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group label::after {
+    content:"*";
+}
+
+.form-group:nth-child(1),
+.form-group:nth-child(2) {
+    width: 45%;
+}
+
+.form-group:nth-child(3),
+.form-group:nth-child(4),
+.form-group:nth-child(5) {
+    width: 100%;
+}
+
+.form-group .form-control {
+    width: 100%;
+    border-radius: 1rem;
+    border: 2px solid var(--red);
+    margin: 0.8rem 3.5rem 0.5rem 0;
+}
+
+.form-group input {
+    height: 2rem;
+    outline: none;
+    padding: 1rem;
+}
+
+input[type="submit"] {
+    background-color: var(--red);
+    width: 100%;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+    height: 3.2rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--lightred);
+}
+
+.form-group textarea {
+    outline: none;
+    height: 8rem;
+    padding: 1rem;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--black);
+    text-align: center;
+    color: white;
+    padding: 3rem 0;
+}
+
+footer p {
+    padding: 1rem 0;
+}

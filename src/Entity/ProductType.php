@@ -23,6 +23,11 @@ class ProductType
     private $name;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $slug;
+
+    /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $imageUrl;
@@ -60,4 +65,27 @@ class ProductType
 
         return $this;
     }
+
+    public function getProducts(): array
+    {
+        return $this->products;
+    }
+
+    public function setProducts($products): self
+    {
+        $this->products = $products;
+        return $this;
+    }
+
+    public function getSlug(): string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug($slug): self
+    {
+        $this->slug = $slug;
+        return $this;
+    }
+
 }
